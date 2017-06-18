@@ -1,0 +1,6 @@
+package: github.com/Catofes/go-routecontrol
+import:
+- package: gopkg.in/kataras/iris.v6
+  version: ^6.2.0
+- package: github.com/op/go-logging
+  version: ^1.0.0
