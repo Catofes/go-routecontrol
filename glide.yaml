@@ -4,3 +4,11 @@ import:
   version: ^6.2.0
 - package: github.com/op/go-logging
   version: ^1.0.0
+- package: github.com/lib/pq
+- package: github.com/go-xorm/xorm
+  version: ^0.6.2
+- package: golang.org/x/text
+  subpackages:
+  - encoding
+- package: github.com/emirpasic/gods
+  version: ^1.9.0

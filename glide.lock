@@ -1,8 +1,18 @@
-hash: bd71e7c25ef09b30a3db12c4c1c8b3dcd4c0aa52f4dde228ebaf5d04b25b19f0
-updated: 2017-06-17T15:18:46.440276732+08:00
+hash: 4a623e12b85f198d62bdd62b992650f5b8bac0f4983ab8bcff2b1f2b541d21b1
+updated: 2017-07-15T10:55:21.227024647+08:00
 imports:
+- name: github.com/emirpasic/gods
+  version: f6c17b524822278a87e3b3bd809fec33b51f5b46
+- name: github.com/go-xorm/xorm
+  version: 3c8314e91603f0bfa6a228c1a0fea8a9e298f6d9
+- name: github.com/lib/pq
+  version: dd1fe2071026ce53f36a39112e645b4d4f5793a4
 - name: github.com/op/go-logging
   version: b2cb9fa56473e98db8caba80237377e83fe44db5
+- name: golang.org/x/text
+  version: 3491b61b9edc56653ad4333e605e2908e46a036b
+  subpackages:
+  - encoding
 - name: gopkg.in/kataras/iris.v6
   version: 09a2066268f99fc8ee40ecddde8b415f76250f4b
 testImports: []

@@ -12,8 +12,10 @@ var once *sync.Once
 
 // JSONConfig struct save all the config parameters.
 type JSONConfig struct {
-	PgPath string
-	Token  string
+	Token            string
+	UdpListenAddress string
+	UdpListenPort    int
+	UdpSecretCode    int
 }
 
 func (s *JSONConfig) init(path string) *JSONConfig {
