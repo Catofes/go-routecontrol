@@ -136,4 +136,14 @@ func (s *PingStack) GetServerInfo(nodeId int) (latency int64, packageLost float6
 	if _, ok := s.data[nodeId]; ok {
 		return s.latency[nodeId], s.packageLost[nodeId]
 	}
+	return -1, 0
+}
+
+func (s *PingStack) PingReplyHandler(conn *net.UDPConn, addr *net.UDPAddr, n int, data []byte) {
+	if n != PingPackageLength {
+		log.Info("Wrong package size at ping request package.")
+		return
+	}
+	pingPackage := (&PingPackage{}).FromBytes(data)
+	s.Put(pingPackage)
 }

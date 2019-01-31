@@ -1,8 +1,15 @@
 hash: 4a623e12b85f198d62bdd62b992650f5b8bac0f4983ab8bcff2b1f2b541d21b1
-updated: 2017-07-15T10:55:21.227024647+08:00
+updated: 2017-07-16T11:12:47.554399777+08:00
 imports:
 - name: github.com/emirpasic/gods
   version: f6c17b524822278a87e3b3bd809fec33b51f5b46
+  subpackages:
+  - containers
+  - maps
+  - maps/treemap
+  - trees
+  - trees/redblacktree
+  - utils
 - name: github.com/go-xorm/xorm
   version: 3c8314e91603f0bfa6a228c1a0fea8a9e298f6d9
 - name: github.com/lib/pq
@@ -10,7 +17,7 @@ imports:
 - name: github.com/op/go-logging
   version: b2cb9fa56473e98db8caba80237377e83fe44db5
 - name: golang.org/x/text
-  version: 3491b61b9edc56653ad4333e605e2908e46a036b
+  version: 836efe42bb4aa16aaa17b9c155d8813d336ed720
   subpackages:
   - encoding
 - name: gopkg.in/kataras/iris.v6
